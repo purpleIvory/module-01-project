@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="assets/css/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>House of your dreams</title>
   </head>
@@ -28,15 +29,39 @@
           />
           <div class="header__logo-title">Building</div>
         </div>
+        <button class="hamburger hamburger--slider" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <nav class="header__nav">
-          <a href="#" class="header__nav-link link">Home</a>
-          <a href="#" class="header__nav-link link">Services</a>
-          <a href="#" class="header__nav-link link">About Us</a>
-          <a href="#" class="header__nav-link link">Properties</a>
-          <a href="#" class="header__nav-link link">Contact</a>
+          <div class="header__nav-group">
+            <div class="header__nav-links">
+              <a href="#" class="header__nav-link link">Home</a>
+              <a href="#" class="header__nav-link link">Services</a>
+              <a href="#" class="header__nav-link link">About Us</a>
+              <a href="#" class="header__nav-link link">Properties</a>
+              <a href="#" class="header__nav-link link">Contact</a>
+            </div>
+            <div class="header__nav-btn">
+              <button class="header__btn btn">Log in</button>
+            </div>
+          </div>
         </nav>
-        <button class="header__btn btn">Log in</button>
       </header>
     </div>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var header__nav = document.querySelector(".header__nav");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        header__nav.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
   </body>
 </html>
