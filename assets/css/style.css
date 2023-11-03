@@ -9,4 +9,77 @@ body {
   margin: 0 auto;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  background: #19BCE4;
+  color: #fff;
+  border: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 46px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__logo-title {
+  font-family: "Rubik";
+  font-size: 1.125rem;
+  color: #02012B;
+  font-weight: 400;
+}
+
+.header__nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header__nav-link {
+  position: relative;
+  font-family: "Rubik";
+  font-size: 1.125rem;
+  color: #02012B;
+  font-weight: 400;
+}
+
+.header__nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  display: block;
+  transition: all 0.5s;
+  bottom: 0;
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+  background-color: #19BCE4;
+}
+
+.header__btn {
+  padding: 10px 25px;
+  position: relative;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: "Rubik";
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+.header__btn:hover {
+  background: rgba(20, 77, 210, 0.7254901961);
+}
+
 /*# sourceMappingURL=style.css.map */
