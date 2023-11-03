@@ -1,5 +1,7 @@
 body {
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .container {
