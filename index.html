@@ -16,7 +16,7 @@
     />
     <link href="assets/css/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>House of your dreams</title>
+    <title>Building</title>
   </head>
   <body>
     <div class="wrapper">
@@ -49,6 +49,87 @@
           </div>
         </nav>
       </header>
+      <div class="banner">
+        <div class="banner__img">
+          <img
+            src="./assets/img/house-picture.png"
+            alt=""
+            class="banner__picture"
+          />
+          <div class="banner__title">
+            <h1 class="banner__main-title">Find Your Drem House</h1>
+            <div class="banner__desc-container">
+              <p class="banner__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                viverra posuere sem purus enim eleifend habitant arcu, sed.
+              </p>
+            </div>
+          </div>
+          <div class="banner__choose-block container">
+            <div class="banner__location">
+              <div class="banner__group">
+                <div class="banner__loc-text">Location</div>
+                <img
+                  src="./assets/img/icons/arrrow-down-icon.svg"
+                  alt=""
+                  class="banner__arrow-down"
+                />
+              </div>
+              <div class="banner__list">
+                <input name="city" list="cities" class="banner__loc-list" />
+              </div>
+              <datalist id="cities">
+                <option value="California" />
+                <option value="France" />
+                <option value="Germany" />
+                <option value="China" />
+                <option value="Russia" />
+              </datalist>
+            </div>
+            <div class="banner__location">
+              <div class="banner__group">
+                <div class="banner__loc-text">Properties</div>
+                <img
+                  src="./assets/img/icons/arrrow-down-icon.svg"
+                  alt=""
+                  class="banner__arrow-down"
+                />
+              </div>
+              <div class="banner__list">
+                <input name="class" list="classes" class="banner__loc-list" />
+              </div>
+              <datalist id="classes">
+                <option value="Delux" />
+                <option value="Lux" />
+                <option value="Vip" />
+                <option value="Medium" />
+                <option value="lite" />
+              </datalist>
+            </div>
+            <div class="banner__location">
+              <div class="banner__group">
+                <div class="banner__loc-text">Price</div>
+                <img
+                  src="./assets/img/icons/arrrow-down-icon.svg"
+                  alt=""
+                  class="banner__arrow-down"
+                />
+              </div>
+              <div class="banner__list">
+                <input name="price" list="prices" class="banner__loc-list" />
+              </div>
+              <datalist id="prices">
+                <option value="$10,000-$12,0000" />
+                <option value="$10,000-$13,0000" />
+                <option value="$10,000-$14,0000" />
+                <option value="$10,000-$15,0000" />
+                <option value="$10,000-$16,0000" />
+              </datalist>
+            </div>
+            <button class="banner__search-btn btn">Search</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>

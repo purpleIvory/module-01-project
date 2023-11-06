@@ -1,9 +1,15 @@
 body
     box-sizing: border-box
     font-family: 'Rubik', 'Noto Sans', sans-serif
+    max-width: 1440px
+    @media screen and (min-width: 1441px)
+        max-width: 1920px
 .container
     max-width: 1200px
     margin: 0 auto
+    @media screen and (min-width: 1441px)
+        max-width: 1920px
+
 .link
     text-decoration: none
 .btn
