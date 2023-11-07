@@ -18,8 +18,13 @@ body {
     max-width: 1920px;
   }
 }
+
+.container-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 1010px) {
-  .container {
+  .container-2 {
     max-width: 580px;
   }
 }
@@ -391,6 +396,7 @@ body {
 }
 @media screen and (max-width: 1110px) {
   .about__section {
+    max-width: 580px;
     display: block;
     justify-content: center;
   }
@@ -485,6 +491,12 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+}
+@media screen and (max-width: 1010px) {
+  .about__flex-contaner {
+    justify-content: stretch;
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   .about__flex-contaner {
