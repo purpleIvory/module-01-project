@@ -18,6 +18,11 @@ body {
     max-width: 1920px;
   }
 }
+@media screen and (max-width: 1010px) {
+  .container {
+    max-width: 580px;
+  }
+}
 
 .link {
   text-decoration: none;
@@ -562,6 +567,91 @@ body {
 
 .about__btn:hover {
   background: rgba(20, 77, 210, 0.8235294118);
+}
+
+.looking__section {
+  margin-top: 195px;
+}
+
+.looking__title {
+  color: #222;
+  font-family: "Rubik";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.8062rem;
+}
+@media screen and (max-width: 1010px) {
+  .looking__title {
+    text-align: center;
+  }
+}
+
+.looking__content-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 68px;
+}
+@media screen and (max-width: 1010px) {
+  .looking__content-block {
+    display: block;
+  }
+}
+
+.looking__picture {
+  max-width: 560px;
+}
+
+.looking__img {
+  width: 100%;
+}
+
+.looking__info-bars {
+  margin-top: -7px;
+}
+@media screen and (max-width: 1010px) {
+  .looking__info-bars {
+    margin-top: 10px;
+  }
+}
+
+.looking__bar-item {
+  display: flex;
+  margin-top: 4px;
+  gap: 28px;
+  padding: 24px 73px 10px 24px;
+  border: 1px solid rgba(25, 188, 228, 0.2);
+  background: #FFF;
+}
+@media screen and (max-width: 1120px) {
+  .looking__bar-item {
+    padding: 20px 2px 10px 2px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .looking__bar-item {
+    max-width: 555px;
+  }
+}
+
+.looking__bar-title {
+  color: #222;
+  font-family: "Rubik";
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.looking__bar-p {
+  max-width: 360px;
+}
+
+.looking__bar-desc {
+  color: #555;
+  font-family: "Rubik";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
