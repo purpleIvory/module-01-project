@@ -1,0 +1,63 @@
+.cards__section
+    margin-top: 196px
+.cards__title
+    color: #222
+    font-family: 'Rubik'
+    font-size: 3rem
+    font-weight: 700
+    line-height: 3.8062rem
+    text-align: center
+.cards__desc
+    color: #555
+    font-family: 'Rubik'
+    font-size: 1.25rem
+    font-weight: 400
+    line-height: 1.6875rem
+    text-align: center
+.cards
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    margin-top: 40px
+    gap: 30px
+    @media screen and (max-width: 1180px)
+        overflow-x: auto
+.card__type-1
+    max-width: 370px
+    max-height: 540px
+    position: relative
+.card__blur
+    position: absolute
+    background: rgba(0, 96, 119, 0.02)
+    backdrop-filter: blur(14.5px)
+    padding: 13px 32px
+    bottom: 112px
+    left: 85px
+.card__blur-txt
+    text-align: center
+    color: #FFF
+    font-family: 'Rubik'
+    font-size: 1.5rem
+    font-weight: 500
+.card__blur-properties
+    text-align: center
+    margin-top: 8px
+    color: #DDD
+    font-family: 'Rubik'
+    font-size: 1.25rem
+    font-weight: 400
+    line-height: 1.6875rem
+.card__t-2-block
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 30px
+.card__type-2
+    position: relative
+    max-width: 370px
+    max-height: 255px
+.card__blur-2
+    position: absolute
+    background: rgba(0, 96, 119, 0.02)
+    backdrop-filter: blur(14.5px)
+    padding: 13px 32px
+    bottom: 24px
+    left: 95px
