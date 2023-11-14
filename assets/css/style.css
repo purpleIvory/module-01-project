@@ -13,6 +13,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 @media screen and (min-width: 1441px) {
   .container {
@@ -23,6 +24,7 @@ body {
 .container-2 {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 @media screen and (max-width: 1010px) {
   .container-2 {
@@ -33,6 +35,7 @@ body {
 .container-3 {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .link {
@@ -911,6 +914,8 @@ body {
   max-width: 1152px;
   padding: 30px 0px 40px 0px;
   margin: 0 auto;
+  margin-bottom: -70px;
+  position: relative;
 }
 
 .subscribe__title {
@@ -992,6 +997,127 @@ body {
     padding: 5px 2px;
     font-size: 0.9rem;
   }
+}
+
+.footer {
+  background: #F8FDFE;
+  width: 100%;
+  padding-top: 189px;
+  padding-bottom: 89px;
+}
+
+.footer__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer__nav-block {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 1165px) {
+  .footer__nav-block {
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer__nav-block {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer__block-2,
+  .footer__block-3,
+  .footer__block-4,
+  .footer__block-5 {
+    flex-basis: 45%;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__logo-title {
+  color: #02012B;
+  font-family: "Rubik";
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.footer__desc {
+  max-width: 329px;
+  color: #555;
+  font-family: "Rubik";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+@media screen and (max-width: 1165px) {
+  .footer__desc {
+    max-width: 100%;
+  }
+}
+
+.footer__networks {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.block__title {
+  color: #222;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer__nav {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer__nav-link {
+  color: #555;
+  font-family: "Rubik";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.block__info {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gmail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.google__play {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
