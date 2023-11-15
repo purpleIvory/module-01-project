@@ -604,6 +604,17 @@ body {
 @media screen and (max-width: 1010px) {
   .looking__title {
     text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 545px) {
+  .looking__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .looking__title {
+    font-size: 1.1rem;
   }
 }
 
@@ -687,6 +698,16 @@ body {
   line-height: 3.8062rem;
   text-align: center;
 }
+@media screen and (max-width: 555px) {
+  .cards__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .cards__title {
+    font-size: 1.3rem;
+  }
+}
 
 .cards__desc {
   color: #555;
@@ -695,6 +716,11 @@ body {
   font-weight: 400;
   line-height: 1.6875rem;
   text-align: center;
+}
+@media screen and (max-width: 555px) {
+  .cards__desc {
+    font-size: 1rem;
+  }
 }
 
 .cards {
@@ -795,6 +821,16 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 430px) {
+  .choose__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .choose__title {
+    font-size: 1.5rem;
+  }
+}
 
 .choose__paragraph {
   max-width: 596px;
@@ -846,6 +882,11 @@ body {
   font-size: 3rem;
   font-weight: 700;
 }
+@media screen and (max-width: 400px) {
+  .reviews__title {
+    font-size: 2rem;
+  }
+}
 
 .reviews__desc {
   text-align: center;
@@ -862,9 +903,9 @@ body {
   margin-top: 130px;
   gap: 10px;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1170px) {
   .reviews__items {
-    gap: 100px;
+    gap: 80px;
   }
 }
 @media screen and (max-width: 370px) {

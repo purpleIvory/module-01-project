@@ -10,6 +10,8 @@
     font-family: 'Noto Sans'
     font-size: 3rem
     font-weight: 700
+    @media screen and (max-width: 400px)
+        font-size: 2rem
 .reviews__desc
     text-align: center
     color: #555
@@ -22,8 +24,8 @@
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr))
     margin-top: 130px
     gap: 10px
-    @media screen and (max-width: 1150px)
-        gap: 100px
+    @media screen and (max-width: 1170px)
+        gap: 80px
     @media screen and (max-width: 370px)
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
 .reviews__item
