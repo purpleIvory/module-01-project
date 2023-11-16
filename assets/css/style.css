@@ -1,8 +1,13 @@
 body {
   box-sizing: border-box;
   font-family: "Rubik", "Noto Sans", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
+}
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 1441px) {
   body {
@@ -79,11 +84,17 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background: #19BCE4;
+    background: rgb(20, 77, 210);
+    background: linear-gradient(180deg, rgb(20, 77, 210) 0%, rgb(25, 188, 228) 100%);
     align-items: center;
     justify-content: center;
     text-align: center;
-    transform: translateX(100%);
+    transform: translateY(-100%);
+    transition: 0.8s all;
+    z-index: 2;
+  }
+  .header__nav.is-active {
+    transform: translateY(0%);
   }
 }
 
@@ -128,7 +139,7 @@ body {
 }
 @media screen and (max-width: 740px) {
   .header__nav-link {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
   }
 }
@@ -162,6 +173,7 @@ body {
   .header__btn {
     background: #fff;
     color: #000;
+    padding: 15px 40px;
   }
 }
 
@@ -175,6 +187,7 @@ body {
 @media screen and (max-width: 740px) {
   .hamburger {
     display: block;
+    z-index: 3;
   }
 }
 
@@ -686,6 +699,11 @@ body {
   line-height: 1.25rem;
 }
 
+.card-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .cards__section {
   margin-top: 196px;
 }
@@ -725,20 +743,33 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 40px;
   gap: 30px;
 }
 @media screen and (max-width: 1180px) {
   .cards {
+    display: flex;
     overflow-x: auto;
   }
 }
 
 .card__type-1 {
   max-width: 370px;
-  max-height: 540px;
   position: relative;
+  grid-row: span 2;
+}
+@media screen and (max-width: 1180px) {
+  .card__type-1 {
+    height: 255px;
+    width: 370px;
+  }
+  .card__type-1 img {
+    width: 370px;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
 }
 
 .card__blur {
@@ -746,7 +777,7 @@ body {
   background: rgba(0, 96, 119, 0.02);
   backdrop-filter: blur(14.5px);
   padding: 13px 32px;
-  bottom: 112px;
+  bottom: 15%;
   left: 85px;
 }
 
@@ -785,7 +816,7 @@ body {
   background: rgba(0, 96, 119, 0.02);
   backdrop-filter: blur(14.5px);
   padding: 13px 32px;
-  bottom: 24px;
+  bottom: 15%;
   left: 95px;
 }
 

@@ -1,3 +1,6 @@
+.card-wrap
+    position: relative
+    overflow: hidden
 .cards__section
     margin-top: 196px
 .cards__title
@@ -22,21 +25,31 @@
         font-size: 1rem
 .cards
     display: grid
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: repeat(3, 1fr)
     margin-top: 40px
     gap: 30px
     @media screen and (max-width: 1180px)
+        display: flex
         overflow-x: auto
 .card__type-1
     max-width: 370px
-    max-height: 540px
     position: relative
+    grid-row: span 2
+    @media screen and (max-width: 1180px)
+        height: 255px
+        width: 370px
+
+        img
+            width: 370px
+            height: 100%
+            object-fit: cover
+            object-position: bottom
 .card__blur
     position: absolute
     background: rgba(0, 96, 119, 0.02)
     backdrop-filter: blur(14.5px)
     padding: 13px 32px
-    bottom: 112px
+    bottom: 15%
     left: 85px
 .card__blur-txt
     text-align: center
@@ -65,5 +78,5 @@
     background: rgba(0, 96, 119, 0.02)
     backdrop-filter: blur(14.5px)
     padding: 13px 32px
-    bottom: 24px
+    bottom: 15%
     left: 95px
