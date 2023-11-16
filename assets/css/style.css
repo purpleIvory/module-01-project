@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   font-family: "Rubik", "Noto Sans", sans-serif;
   margin: 0;
+  max-width: 1920px;
 }
 body.fixed {
   position: fixed;
@@ -9,20 +10,20 @@ body.fixed {
   height: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1441px) {
   body {
-    max-width: 1920px;
+    max-width: 1440px;
   }
 }
 
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0px 20px;
+  max-width: 1920px;
 }
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1441px) {
   .container {
-    max-width: 1920px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 20px;
   }
 }
 
