@@ -1061,6 +1061,7 @@ body.fixed {
   line-height: 1.6875rem;
   padding: 10px 23px;
   border-radius: 6px;
+  transition: 0.5s all;
 }
 @media screen and (max-width: 420px) {
   .field__btn {
@@ -1073,6 +1074,10 @@ body.fixed {
     padding: 5px 2px;
     font-size: 0.9rem;
   }
+}
+
+.field__btn:hover {
+  background: rgba(20, 77, 210, 0.8235294118);
 }
 
 .footer {
@@ -1164,6 +1169,7 @@ body.fixed {
 }
 
 .footer__nav-link {
+  position: relative;
   color: #555;
   font-family: "Rubik";
   font-size: 1.125rem;
@@ -1194,6 +1200,21 @@ body.fixed {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.footer__nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  display: block;
+  transition: all 0.5s;
+  bottom: 0;
+}
+
+.footer__nav-link:hover::after {
+  width: 100%;
+  background-color: #19BCE4;
 }
 
 /*# sourceMappingURL=style.css.map */

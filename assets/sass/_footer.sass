@@ -57,6 +57,7 @@
     flex-direction: column
     gap: 6px
 .footer__nav-link
+    position: relative
     color: #555
     font-family: 'Rubik'
     font-size: 1.125rem
@@ -79,3 +80,14 @@
     display: flex
     align-items: center
     gap: 8px
+.footer__nav-link:after
+    content: ''
+    position: absolute
+    width: 0%
+    height: 2.5px
+    display: block
+    transition: all 0.5s
+    bottom: 0
+.footer__nav-link:hover::after
+    width: 100%
+    background-color: #19BCE4
